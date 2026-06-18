@@ -1,0 +1,41 @@
+<ActionBar class="action-bar">
+  <NavigationButton visibility="hidden"></NavigationButton>
+  <GridLayout columns="50, *">
+    <Label
+      col="0"
+      class="fas"
+      text="&#xf060;"
+      (tap)="onBackTap()"
+    ></Label>
+    <Label class="action-bar-title" text="Detalle" col="1"></Label>
+  </GridLayout>
+</ActionBar>
+
+<ScrollView class="page__content">
+  <StackLayout *ngIf="producto" class="detalle">
+    <Label
+      class="detalle-icono fas"
+      [text]="producto.icono"
+      horizontalAlignment="center"
+    ></Label>
+
+    <Label class="detalle-nombre" [text]="producto.nombre"></Label>
+    <Label
+      class="detalle-descripcion"
+      [text]="producto.descripcion"
+      textWrap="true"
+    ></Label>
+
+    <Label class="detalle-precio" [text]="'Precio: $' + producto.precio"></Label>
+
+    <Label
+      class="detalle-estado"
+      [text]="producto.disponible ? 'Disponible' : 'Agotado'"
+      [class.-agotado]="!producto.disponible"
+    ></Label>
+  </StackLayout>
+
+  <StackLayout *ngIf="!producto" class="detalle">
+    <Label text="Producto no encontrado." class="detalle-nombre"></Label>
+  </StackLayout>
+</ScrollView>

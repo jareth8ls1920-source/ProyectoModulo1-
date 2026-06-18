@@ -1,0 +1,18 @@
+// Import common styles
+@import 'app-common';
+
+// Place any CSS rules you want to apply only on iOS here
+
+// Identidad visual de iOS (azul del sistema) aplicada globalmente.
+.action-bar {
+  background-color: #007aff;
+  color: #ffffff;
+}
+
+.nt-drawer__header {
+  background-color: #007aff;
+}
+
+.nt-drawer__header-brand {
+  color: #ffffff;
+}

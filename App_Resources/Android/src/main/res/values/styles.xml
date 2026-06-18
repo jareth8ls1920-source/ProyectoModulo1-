@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <style name="AppThemeBase" parent="Theme.AppCompat.Light.NoActionBar">
+    <item name="colorPrimary">@color/ns_primary</item>
+    <item name="colorPrimaryDark">@color/ns_primaryDark</item>
+    <item name="colorAccent">@color/ns_accent</item>
+  </style>
+
+  <style name="AppTheme" parent="AppThemeBase"></style>
+
+  <style name="LaunchScreenThemeBase" parent="AppThemeBase">
+    <item name="android:windowBackground">@color/ns_primary</item>
+  </style>
+
+  <style name="LaunchScreenTheme" parent="LaunchScreenThemeBase"></style>
+</resources>

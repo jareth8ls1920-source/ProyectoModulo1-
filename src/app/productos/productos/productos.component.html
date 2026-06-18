@@ -1,0 +1,50 @@
+<ActionBar class="action-bar">
+  <NavigationButton visibility="hidden"></NavigationButton>
+  <GridLayout columns="50, *">
+    <Label class="action-bar-title" text="Productos" colSpan="2"></Label>
+    <Label class="fas" text="&#xf0c9;" (tap)="onDrawerButtonTap()"></Label>
+  </GridLayout>
+</ActionBar>
+
+<GridLayout rows="auto, *" class="page__content">
+  <!-- Cabecera con la insignia de plataforma (estilizada por SO) -->
+  <StackLayout row="0" class="productos-header">
+    <Label
+      class="plataforma-badge"
+      [text]="'Catálogo · ' + disponibles + ' disponibles · ' + plataforma"
+    ></Label>
+  </StackLayout>
+
+  <!-- Listado de productos generado con *ngFor -->
+  <ScrollView row="1">
+    <StackLayout>
+      <GridLayout
+        *ngFor="let producto of productos"
+        columns="auto, *, auto"
+        class="producto-item"
+        (tap)="onProductoTap(producto)"
+      >
+        <Label
+          col="0"
+          class="producto-icono fas"
+          [text]="producto.icono"
+        ></Label>
+
+        <StackLayout col="1" class="producto-info">
+          <Label class="producto-nombre" [text]="producto.nombre"></Label>
+          <Label
+            class="producto-descripcion"
+            [text]="producto.descripcion"
+            textWrap="true"
+          ></Label>
+        </StackLayout>
+
+        <Label
+          col="2"
+          class="producto-precio"
+          [text]="'$' + producto.precio"
+        ></Label>
+      </GridLayout>
+    </StackLayout>
+  </ScrollView>
+</GridLayout>

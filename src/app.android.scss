@@ -1,0 +1,18 @@
+// Import common styles
+@import 'app-common';
+
+// Place any CSS rules you want to apply only on Android here
+
+// Identidad visual de Android (Material - verde) aplicada globalmente.
+.action-bar {
+  background-color: #3ddc84;
+  color: #0b3d20;
+}
+
+.nt-drawer__header {
+  background-color: #3ddc84;
+}
+
+.nt-drawer__header-brand {
+  color: #0b3d20;
+}

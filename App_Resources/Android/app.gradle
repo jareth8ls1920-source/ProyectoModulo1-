@@ -1,0 +1,10 @@
+// Configuración a nivel de aplicación para el build de Android.
+android {
+  defaultConfig {
+    minSdkVersion 21
+    generatedDensities = []
+  }
+  aaptOptions {
+    additionalParameters "--no-version-vectors"
+  }
+}

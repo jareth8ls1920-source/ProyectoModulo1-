@@ -1,0 +1,97 @@
+/*
+ * Estilos específicos para iOS del feature Productos.
+ * Contraparte de productos.component.android.css (sobrecarga por plataforma).
+ * Se aplican únicamente cuando la app se ejecuta en iOS, dando una identidad
+ * visual distinta (azul) a la misma pantalla.
+ */
+
+/* Insignia de plataforma con la identidad visual de iOS (azul) */
+.plataforma-badge {
+  background-color: #007aff;
+  color: #ffffff;
+  padding: 8 14;
+  border-radius: 10;
+  font-weight: 600;
+}
+
+.productos-header {
+  padding: 12;
+  background-color: #eaf3ff;
+}
+
+.producto-item {
+  padding: 14;
+  margin: 6 10;
+  background-color: #ffffff;
+  border-radius: 12;
+  border-width: 0;
+}
+
+.producto-icono {
+  font-size: 26;
+  color: #007aff;
+  vertical-align: center;
+  margin-right: 14;
+}
+
+.producto-nombre {
+  font-size: 17;
+  font-weight: 600;
+  color: #1c1c1e;
+}
+
+.producto-descripcion {
+  font-size: 13;
+  color: #8e8e93;
+}
+
+.producto-precio {
+  font-size: 16;
+  font-weight: 600;
+  color: #007aff;
+  vertical-align: center;
+}
+
+/* Vista de detalle */
+.detalle {
+  padding: 24;
+}
+
+.detalle-icono {
+  font-size: 72;
+  color: #007aff;
+  margin-bottom: 16;
+}
+
+.detalle-nombre {
+  font-size: 24;
+  font-weight: 600;
+  text-align: center;
+  color: #1c1c1e;
+}
+
+.detalle-descripcion {
+  font-size: 15;
+  text-align: center;
+  color: #8e8e93;
+  margin: 10 0;
+}
+
+.detalle-precio {
+  font-size: 20;
+  font-weight: 600;
+  text-align: center;
+  color: #007aff;
+  margin-top: 12;
+}
+
+.detalle-estado {
+  font-size: 15;
+  text-align: center;
+  color: #34c759;
+  margin-top: 8;
+}
+
+.detalle-estado.-agotado {
+  color: #ff3b30;
+}

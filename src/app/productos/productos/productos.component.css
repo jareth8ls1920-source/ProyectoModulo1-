@@ -1,0 +1,23 @@
+/*
+ * Estilos base (fallback) del feature Productos.
+ * NativeScript prioriza los archivos con sufijo de plataforma
+ * (productos.component.android.css / productos.component.ios.css);
+ * este archivo solo se usa como respaldo neutral.
+ */
+.productos-header {
+  padding: 12;
+}
+
+.producto-item {
+  padding: 14;
+  margin: 6 10;
+}
+
+.producto-nombre {
+  font-size: 17;
+  font-weight: bold;
+}
+
+.detalle {
+  padding: 24;
+}

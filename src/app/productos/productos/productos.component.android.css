@@ -1,0 +1,98 @@
+/*
+ * Estilos específicos para ANDROID del feature Productos.
+ * Este archivo usa la "sobrecarga de nombres" por plataforma:
+ *   productos.component.android.css  -> se compila solo en Android
+ *   productos.component.ios.css      -> se compila solo en iOS
+ * NativeScript elige automáticamente el archivo según el sistema operativo.
+ */
+
+/* Insignia de plataforma con la identidad visual de Android (verde) */
+.plataforma-badge {
+  background-color: #3ddc84;
+  color: #0b3d20;
+  padding: 8 14;
+  border-radius: 4;
+  font-weight: bold;
+}
+
+.productos-header {
+  padding: 12;
+  background-color: #e8f5e9;
+}
+
+.producto-item {
+  padding: 14;
+  margin: 6 10;
+  background-color: #ffffff;
+  border-radius: 4;
+  border-width: 0;
+}
+
+.producto-icono {
+  font-size: 26;
+  color: #3ddc84;
+  vertical-align: center;
+  margin-right: 14;
+}
+
+.producto-nombre {
+  font-size: 17;
+  font-weight: bold;
+  color: #212121;
+}
+
+.producto-descripcion {
+  font-size: 13;
+  color: #616161;
+}
+
+.producto-precio {
+  font-size: 16;
+  font-weight: bold;
+  color: #3ddc84;
+  vertical-align: center;
+}
+
+/* Vista de detalle */
+.detalle {
+  padding: 24;
+}
+
+.detalle-icono {
+  font-size: 72;
+  color: #3ddc84;
+  margin-bottom: 16;
+}
+
+.detalle-nombre {
+  font-size: 24;
+  font-weight: bold;
+  text-align: center;
+  color: #212121;
+}
+
+.detalle-descripcion {
+  font-size: 15;
+  text-align: center;
+  color: #616161;
+  margin: 10 0;
+}
+
+.detalle-precio {
+  font-size: 20;
+  font-weight: bold;
+  text-align: center;
+  color: #3ddc84;
+  margin-top: 12;
+}
+
+.detalle-estado {
+  font-size: 15;
+  text-align: center;
+  color: #2e7d32;
+  margin-top: 8;
+}
+
+.detalle-estado.-agotado {
+  color: #c62828;
+}

@@ -1,0 +1,19 @@
+# NativeScript / Node
+node_modules/
+platforms/
+hooks/
+.idea/
+.vscode/
+*.log
+npm-debug.log*
+
+# Build artifacts
+/dist/
+/build/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Webpack
+webpack.report/
